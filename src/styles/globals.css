@@ -1,0 +1,138 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general text styling */
+body, html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+p, a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for general layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section with gradient background */
+.bg-gradient {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #6a11cb;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #2980b9;
+}
+
+/* Cards for content sections */
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Rating Icons */
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+  color: #7f8c8d;
+  margin-top: 50px;
+  border-top: 1px solid #e1e1e1;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Additional Elements */
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-buttons .btn {
+  margin: 5px;
+}
+
+.weather-card:hover {
+  background-color: #c6ff28; 
+}
+
+
