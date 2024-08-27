@@ -9,7 +9,7 @@ export default function NavBar() {
         <a
           className="navbar-brand"
           href="#"
-          style={{ fontWeight: '700' }}
+          style={{ fontWeight: '700', fontSize: '24px' }} 
           onClick={() => router.push('/')}
         >
           [ TOURNEST ]
