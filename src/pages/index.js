@@ -54,7 +54,7 @@ export default function Home() {
         setLoading(false);
       }
     }, 500),
-    []  // 의존성 배열에는 필요한 모든 변수를 포함
+    []  
   );
 
   const fetchWeather = useCallback(async (cityName) => {
@@ -86,7 +86,7 @@ export default function Home() {
             lon: lon,
             appid: API_KEY,
             units: 'metric',
-            lang: 'en',  // 언어 설정을 영어로 변경
+            lang: 'en', 
           },
         }
       );
@@ -101,7 +101,7 @@ export default function Home() {
             lon: lon,
             appid: API_KEY,
             units: 'metric',
-            lang: 'en',  // 언어 설정을 영어로 변경
+            lang: 'en',  
           },
         }
       );
@@ -112,7 +112,7 @@ export default function Home() {
       setWeather(null);
       setForecast([]);
     }
-  }, [API_KEY]);  // API_KEY가 의존성 배열에 포함되어야 합니다
+  }, [API_KEY]); 
 
   useEffect(() => {
     if (city.trim()) {
@@ -123,7 +123,7 @@ export default function Home() {
       setWeather(null);
       setForecast([]);
     }
-  }, [city, fetchRecommendations, fetchWeather]);  // 모든 필요한 의존성을 포함
+  }, [city, fetchRecommendations, fetchWeather]);  
 
   const handleCityChange = (e) => {
     setCity(e.target.value);
